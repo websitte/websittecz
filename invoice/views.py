@@ -248,7 +248,7 @@ def viewDocumentInvoice(request, slug):
     products = Product.objects.filter(invoice=invoice)
 
     # Get Client Settings
-    p_settings = Settings.objects.get(clientName='Skolo Online Learning')
+    p_settings = Settings.objects.get(clientName='Websitte')
 
     # Calculate the Invoice Total
     invoiceTotal = 0.0
