@@ -1,5 +1,4 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,148 +8,94 @@
     <meta name="author" content="Websitte">
     <title>Websitte IS</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/css/headers.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/css/features.css' %}" rel="stylesheet">
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
-
-    <!-- Custom styles for this template -->
-    <link href="{% static 'assets/css/starter-template.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/css/sticky-footer-navbar.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/custom-homepage.css' %}" rel="stylesheet">
 
 </head>
-
-
-<body class="d-flex flex-column h-100">
-
-<header class="p-3 bg-dark text-white">
-    <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <img class="mb-4" src="{% static 'assets/img/logo_w_2024.svg' %}" alt="" width="80" height="auto">
-            </a>
-
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">Služby</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Webhosting</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Reference</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Blog</a></li>
-            </ul>
-
-            <div class="text-end">
-                <a href="#" class="nav-link px-2 text-white">KONTAKTY</a>
-                <a href="{% url 'login' %}">
-                    <button type="button" class="btn btn-primary">Přihlásit</button>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">
+                    <img src="{% static 'assets/img/logo_tt_24.svg' %}" width="130">
                 </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#!">Kontakty</a></li>
+                        <li class="nav-item"><a href="{% url 'login' %}"><button type="button" class="btn btn-primary">Přihlásit</button></a></li>
+                    </ul>
+                </div>
+
             </div>
-        </div>
-    </div>
-</header>
-
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-
-    <!-- The hero starts here ..... -->
-    <div class="container my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1">Vytvořte si fakturu online během chvíle</h1>
-                <p class="lead">Are you looking for a FREE invoice builder online? get
-                    started with creating your own invoice online with free invoice template
-                    for your business.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                    <a href="{% url 'login' %}">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Get Started</button>
-                    </a>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Tvorba webových stránek</h1>
+                    <h2 class="masthead-subheading mb-0">Neděláme jen dobré weby a eshopy ale i online marketing.
+Již od roku 2005. Od malých po velké společnosti.</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Chci nový web</a>
                 </div>
             </div>
-            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                <img class="rounded-lg-3" src="{% static 'assets/img/bootstrap-docs.png' %}" alt="" width="720">
-            </div>
-        </div>
-    </div>
-    <!-- The hero ends here -->
-
-
-    <!-- The features start here  -->
-    <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom">Skolo Online Free Online Invoice Generator</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="feature col">
-                <div class="feature-icon bg-primary bg-gradient">
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#collection"/>
-                    </svg>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+        <!-- Content section 1-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'assets/img/01.jpg' %}" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">For those about to rock...</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                        </div>
+                    </div>
                 </div>
-                <h2>Free Forever</h2>
-                <p>No monthly fees, packages, credit card bills or expensive
-                    accountants. Create invoices online for free, forever.</p>
-                <a href="#" class="icon-link">
-                    Start for free
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#chevron-right"/>
-                    </svg>
-                </a>
             </div>
-            <div class="feature col">
-                <div class="feature-icon bg-primary bg-gradient">
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#people-circle"/>
-                    </svg>
+        </section>
+        <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'assets/img/02.jpg' %}" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">We salute you!</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                        </div>
+                    </div>
                 </div>
-                <h2>Cloud Access</h2>
-                <p>Save your on the cloud for access from any device anywhere. Never lose client
-                    information again, simply log in to your account and access
-                    all historical invoices</p>
-                <a href="#" class="icon-link">
-                    Generate first invoice
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#chevron-right"/>
-                    </svg>
-                </a>
             </div>
-            <div class="feature col">
-                <div class="feature-icon bg-primary bg-gradient">
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#toggles2"/>
-                    </svg>
+        </section>
+        <!-- Content section 3-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'assets/img/03.jpg' %}" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Let there be rock!</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                        </div>
+                    </div>
                 </div>
-                <h2>Professional Invoices</h2>
-                <p>Create professional invoices with your company logo and email them directly to
-                    your clients from your dashboard. Keep track of when the client receives the
-                    invoice and makes payment </p>
-                <a href="#" class="icon-link">
-                    Get started with free invoice
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#chevron-right"/>
-                    </svg>
-                </a>
             </div>
-        </div>
-    </div>
-    <!-- The features end here -->
-
-</main>
-
-<footer class="footer mt-auto py-3 bg-light">
+        </section>
+        <!-- Footer-->
+       <footer class="footer mt-auto py-3 bg-black">
     <div class="container">
         <ul>
             <li><a href="">Služby</a></li>
@@ -168,10 +113,24 @@
         <span class="">&copy {{ date }}, developed by Websitte.cz</span>
     </div>
 </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 
 <!-- JS starts here  -->
 <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
 
-</body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
